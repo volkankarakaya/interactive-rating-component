@@ -107,3 +107,10 @@ button:hover{
 .vote-card.hide{
     display: none;
 }
+
+.attribution{
+    color: hsl(217, 12%, 63%);
+}
+.attribution a{
+    color: white;
+}
