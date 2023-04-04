@@ -24,11 +24,12 @@ main{
     background: hsl(213, 19%, 18%);
     color: hsl(217, 12%, 63%);
     border-radius: 16px;
+    text-align: center;
 
 }
 
 .vote-card{
-    display: none;
+    display: flex;
     flex-direction: column;
     padding: 32px;
     gap: 16px;
@@ -39,10 +40,10 @@ h2{
 }
 
 .closing-card{
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 32px;
-    gap: 16px;
+    gap: 24px;
     justify-content: center;
     align-items: center;
 }
@@ -72,4 +73,37 @@ button{
     font-size: 1.1rem;
     color: white;
     
+}
+
+.selection-message{
+    color: hsl(25, 97%, 53%);
+    background: #313d49;
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+.point-number.container:hover{
+   background: hsl(216, 12%, 54%);
+   color: white;
+   cursor: pointer;
+    
+}
+
+.point-number.container.active{
+   background: hsl(25, 97%, 53%);
+   color: white;
+    
+}
+
+button:hover{
+    background: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.closing-card.show{
+    display: flex;
+}
+.vote-card.hide{
+    display: none;
 }
